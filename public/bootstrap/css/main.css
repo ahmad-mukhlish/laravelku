@@ -1,0 +1,298 @@
+html, body{
+    margin:0px;
+    padding:0px;
+    overflow-x: hidden;
+}
+
+body{
+	font-family: Segoe UI !important;
+	font-size: 14px !important;
+}
+
+.fixed_div{
+    position:fixed !important;
+    margin-top: 0 !important;
+}
+
+#topContent{
+    margin-top:15px;
+}
+
+.navbar-fixed-top{
+    background: rgba(51, 51, 51, 0.8);
+    margin-top: 80px;
+}
+
+li a{
+	color: white;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.main{
+	position: relative;
+}
+
+
+.carousel-inner>.item>img, .carousel-inner>.item>img {
+	display: block;
+	height: 550px;
+	max-width: 100%;
+	line-height: 1;
+	width: 100%;
+    margin-top: 10px;
+
+}
+
+#btnCari{
+    background-color: #0076FF;
+    color: white;
+    width: 80px;
+}
+
+.main .main-content {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.main .main-content .col-md-4 {
+    padding: 10px;
+}
+
+.main .main-content a{
+    color: black;
+}
+
+.main .main-content figure {
+    display: inline-block;
+    width: 80%;
+    height: 300px;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(149,152,154,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(149,152,154,1);
+    box-shadow: 0px 0px 5px 0px rgba(149,152,154,1);
+    margin: 5px;
+}
+
+.main .main-content figure img {
+    width: 100%;
+    height: 200px;
+}
+
+.main .main-content figure figcaption {
+    text-align: center;
+}
+
+.main .main-content figure figcaption span {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.main .main-content figure .detail .col-md-4{
+    font-weight: normal;
+}
+/*
+.main .main-content figure .detail {
+    text-align: center;
+    border-top: 1px solid #CFCFCF;
+    padding-top: 7px;
+    cursor: pointer;
+}
+
+.main .main-content figure .detail:hover {
+    background-color: #F2F2F2;
+}
+
+.main .main-content figure .detail:hover span {
+    font-weight: 500;
+}
+
+.main .main-content figure .detail i {
+    font-size: 20px;
+    width: 30px;
+}
+
+.main .main-content figure .detail span {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+*/
+
+.motor-banner-search {
+    margin-top: -200px;
+    color: white;
+}
+.motor-banner-assistant, .motor-banner-search {
+    position: absolute;
+    top: 50%;
+    background: rgba(0,82,204,.9);
+    width: 500px;
+    height: 350px;
+}
+.motor-banner-search {
+    position: absolute;
+    background: rgba(51, 51, 51, 0.8);
+    border-radius: 5px;
+    margin-left: 10%;
+    padding: 30px;
+    z-index: 2;
+}
+
+.motor-banner-search button{
+	color: black;
+}
+
+.icon-bar{
+    background-color: white;
+}
+
+
+.footer{
+    text-align: center;
+    margin: 10px;
+    font-size: 16px;
+}
+
+
+.container .row .col-md-9 input{
+    width: 210px !important;
+    height: 37px;
+}
+
+.container .row .col-md-9 button{
+    width: 70px !important;
+    height: 37px;
+}
+
+#btnLain{
+    width: 20%;
+    margin-top: 20px;
+    margin-left: 530px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+#labelkontak{
+    text-align: center;
+    margin: 50px;
+}
+
+.cardKontak{
+    margin: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    .carousel-inner>.item>img, .carousel-inner>.item>img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .navbar-fixed-top{
+        margin-top: 0 !important;
+    }
+
+    #topContent{
+        margin-top: 60px;
+
+    }
+
+    .main .main-content .col-md-4{
+        width: 100%;
+    }
+
+    .main .main-content figure .detail{
+        font-size: 12px;
+
+    }
+
+    .main .main-content figure .detail .col-md-4{
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .container .row .col-md-3{
+        width: 100%;
+    }
+
+     .container .row .col-md-9{
+        width: 100%;
+    }
+
+    .container .row .col-md-9 input{
+        width: 70% !important;
+        position: absolute;
+    }
+
+    .container .row .col-md-9 .navbar-form .form-group #btnCari{
+        width: 20% !important;
+        position: relative;
+        font-weight: bold;
+        margin-left: 80%;
+
+    }
+
+    .footer{
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    .carousel-inner>.item>img, .carousel-inner>.item>img {
+        height: auto !important;
+    }
+
+    .motor-banner-search {
+        width: 100% !important;
+        height: 520px !important;
+        margin-left: 0 !important;
+        margin-top: 100px;
+    }
+
+    a #btnLain{
+        color: black !important;
+        width: 50% !important;
+        margin-left: 80px !important;
+    }
+
+    #motor{
+        margin-top: 580px !important;
+    }
+
+
+}
+
+/*@media screen and (min-width: 768px;) and (max-width: 992px){
+
+    .main .main-content .col-md-4{
+        width: 50%;
+    }
+
+    .main .main-content figure .detail .col-md-4{
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .container .row {
+        width: 100%;
+        margin: 10px;
+    }
+
+     .container .row .col-md-4{
+        position: absolute;
+    }
+
+     .container .row .col-md-8{
+        position: relative;
+    }
+
+    .footer{
+        margin-left: 100px;
+        font-size: 14px;
+    }
+
+}*/

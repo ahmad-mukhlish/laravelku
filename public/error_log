@@ -1,0 +1,3 @@
+[29-Dec-2018 04:33:59 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/larismot/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 242
+[29-Dec-2018 04:34:35 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/larismot/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 242
+[20-Apr-2019 05:37:32 UTC] PHP Fatal error:  Cannot use App\UserModel as UserModel because the name is already in use in /home/larismot/public_html/app/Http/Controllers/ApiController.php on line 22

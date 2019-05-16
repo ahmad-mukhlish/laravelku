@@ -1,0 +1,173 @@
+body{
+	font-family: Segoe UI !important;
+	font-size: 14px !important;
+	overflow-x: hidden;
+}
+
+.artikel{
+    margin-top: 20px;
+}
+
+#judul{
+	margin-left: 40px;
+}
+
+#isi{
+	margin-left: 40px;
+}
+
+#images{
+	width: 100px;
+}
+
+li a{
+	color: white;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    padding: 30px;
+}
+
+.fab{
+    display: none;
+}
+
+
+.main{
+    margin-top: 80px;
+}
+.fixed_div{
+    position:fixed !important;
+    margin-top: 0 !important;
+}
+
+#topContent{
+    margin-top:15px;    
+}   
+
+
+.navbar-fixed-top{
+    background: rgba(51, 51, 51, 0.8);
+    margin-top: 80px;
+    display: none;
+}
+
+.navbar-header{
+	margin-left: 40px !important;
+}
+li a{
+	color: white;
+}
+
+.main .row{
+	margin: 20px;
+	padding: 10px;
+}
+
+.main .wa{
+	background-color: #34B225;
+	text-align: center;
+	height: 50px;
+	padding: 5px;
+}
+
+a .wa{
+	color: white;
+}
+
+a .hubungi{
+	color: black;
+}
+
+a:hover{
+	text-decoration: none !important;
+}
+
+.main .hubungi{
+	text-align: center;
+	font-weight: bold;
+}
+
+
+#btnCari{
+    background-color: #0076FF;
+    color: white;
+    width: 80px;
+}
+
+.icon-bar{
+    background-color: white;
+}
+
+.container .row .col-md-9 input{
+    width: 210px !important;
+    height: 37px;
+}
+
+.container .row .col-md-9 button{
+    width: 70px !important;
+    height: 37px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+		/*#judul{
+			margin-left: 40px;
+		}
+
+		#isi{
+			margin-left: 40px;
+		}*/
+
+        .artikel{
+            margin-left: 20px;
+        }
+
+		div .col-md-1{
+			width: 30%;
+		}
+
+		div .col-md-11{
+			width: 70%;
+		}
+
+    .main{
+        margin-top: 0;
+    }
+
+     .navbar-fixed-top{
+        margin-top: 0 !important;
+    }
+
+    #topContent{
+        margin-top: 60px;
+
+    }
+
+    .container .row .col-md-3{
+        width: 100%;
+    }
+
+     .container .row .col-md-9{
+        width: 100%;
+    }
+
+    .container .row .col-md-9 input{
+        width: 70% !important;
+        position: absolute;
+    }
+
+    .container .row .col-md-9 .navbar-form .form-group #btnCari{
+        width: 20% !important;
+        position: relative;
+        font-weight: bold;
+        margin-left: 80%;
+
+    }
+
+
+}
