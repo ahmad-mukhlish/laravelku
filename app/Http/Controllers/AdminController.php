@@ -20,8 +20,8 @@ class AdminController extends Controller
         if ($request->session()->has('username')) {
             return redirect('admin/home');
         }else{
-            $message = "";
-    	   return view('admin/login')->with('message', $message);
+         $message = "";
+    	   return view('admin.login')->with('message', $message);
         }
     }
 
@@ -42,11 +42,13 @@ class AdminController extends Controller
                             ->where('status','1')
                             ->first();
 
+
+
         if ($cekUser!=null) {
             $request->session()->put('username', $username);
             return redirect('admin/home');
         }else{
-            return redirect('admin')->with('message', 'Username atau Password Salah');   
+            return view('admin.login')->with('message', 'Username atau Password Salah');
         }
     }
 
@@ -67,7 +69,7 @@ class AdminController extends Controller
             return view('admin/banner', ['banner' => $banner])->with('username',$username);
         }else{
             return redirect('admin');
-        }    
+        }
 
     }
 
@@ -102,13 +104,13 @@ class AdminController extends Controller
         $banner->keterangan = $request->keterangan;
         $banner->save();
         return redirect('admin/home');
-        
+
     }
 
     public function deleteBanner($id_banner, $image){
     	$banner = Banner::where('id_banner',$id_banner)->delete();
         Storage::disk('uploads')->delete('storage/banner/'.$image);
-    	return redirect('admin/home');	
+    	return redirect('admin/home');
     }
 
     public function addArtikel(Request $request)
@@ -142,13 +144,13 @@ class AdminController extends Controller
         $artikel->isi = $request->keterangan;
         $artikel->save();
         return redirect('admin/artikel');
-        
+
     }
 
     public function deleteArtikel($id_banner, $image){
         $artikel = Artikel::where('id',$id_banner)->delete();
         Storage::disk('uploads')->delete('storage/artikel/'.$image);
-        return redirect('admin/artikel');  
+        return redirect('admin/artikel');
     }
 
     public function password_status()
@@ -177,7 +179,7 @@ class AdminController extends Controller
             }
 
 
-        }else if ($request->submit == "Tolak") {       
+        }else if ($request->submit == "Tolak") {
             $status->status = 0;
             $status->save();
         }
